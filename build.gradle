@@ -19,7 +19,7 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 minecraft {
-    mappings channel: 'stable', version: '39'
+    mappings channel: 'stable', version: '39-1.12'
 }
 
 dependencies {
