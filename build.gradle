@@ -5,11 +5,11 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:2.3-SNAPSHOT'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:3.0.194'
     }
 }
 
-apply plugin: 'net.minecraftforge.gradle.forge'
+apply plugin: 'net.minecraftforge.gradle'
 
 version = '1.0'
 group = 'com.amjad.fpsboost'
@@ -19,9 +19,11 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 minecraft {
-    version = '1.12.2-14.23.5.2860'
-    mappings = 'stable_39'
-    runDir = 'run'
+    mappings channel: 'stable', version: '39'
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2860'
 }
 
 processResources {
